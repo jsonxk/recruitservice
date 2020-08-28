@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="base-gateway" />
+        <module name="user-base-client" />
+        <module name="user-base-core" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="user-base-service" target="1.8" />
+      <module name="userbaseclient" target="1.8" />
+      <module name="userbaseservice" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="base-gateway" options="-parameters" />
+      <module name="user-base-client" options="-parameters" />
+      <module name="user-base-core" options="-parameters" />
+      <module name="user-base-service" options="" />
+      <module name="userbaseservice" options="-parameters" />
+    </option>
+  </component>
+</project>
